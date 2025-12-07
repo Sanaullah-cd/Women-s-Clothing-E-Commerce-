@@ -3,7 +3,7 @@ Title: Women's Clothing E-Commerce Project
 Author: Sanaullh Shafaq - Nurgazt Dias Aslanuly
 Institution:CS
 Course: Data Mining
-Date:7/12/2025
+Date:5/12/2025
 
 1.	Introduction
 Purpose: This project analyzes Women's Clothing E-Commerce Reviews to understand customer sentiment, product feedback, and recommendation trends.
