@@ -1,78 +1,155 @@
-# Women-s-Clothing-E-Commerce-
-Title: Women's Clothing E-Commerce Project
-Author: Sanaullh Shafaq - Nurgazt Dias Aslanuly
-Institution:CS
-Course: Data Mining
-Date:5/12/2025
+Women's Clothing E-Commerce Project
 
-1.	Introduction
-Purpose: This project analyzes Women's Clothing E-Commerce Reviews to understand customer sentiment, product feedback, and recommendation trends.
-Goals: Explore data, preprocess it, build models (ML, NLP, NN), analyze results, and provide insights.
-Figure 1: Data lifecycle and stages of analysis.
-2.	Data Description and Collection
-Source: Kaggle / CSV file 'Womens Clothing E-Commerce Reviews.csv'
+Title: Women's Clothing E-Commerce Reviews Analysis
+Authors: Sanaullah Shafaq, Nurgazt Dias Aslanuly
+Institution: CS
+Course: Data Mining
+Date: 05/12/2025
+
+Project Overview
+
+This project provides a comprehensive data analysis and modeling workflow for the Women's Clothing E-Commerce Reviews dataset. The objective is to explore customer reviews, analyze patterns in ratings and recommendations, perform NLP on textual reviews, build predictive models, and generate actionable insights.
+
+Key components include:
+
+Data preprocessing and cleaning
+
+Exploratory Data Analysis (EDA)
+
+Statistical analysis and hypothesis testing
+
+Machine learning: supervised and unsupervised models
+
+Time series forecasting
+
+Neural network modeling
+
+Natural Language Processing (NLP)
+
+Ethics and data security considerations
+
+Dataset
+
+Source: Kaggle / CSV file Womens Clothing E-Commerce Reviews.csv
+
 Number of records: X
+
 Number of variables: Y
-Data types: Numerical (Rating, Age, Feedback), Categorical (Department, Division, Class), Text (Review Text)
-Figure 2: Dataset structure and variable types.
-3.	Data Preprocessing
-•	Handle missing values: Review Text filled with empty string; Recommended IND derived from Rating.
-•	Remove duplicates.
-•	Normalize numeric features.
-•	Encode categorical features.
-•	Split data into train/test sets.
-Figure 3: Missing values before and after cleaning.
-Figure 4: Normalized numerical features.
-4.	Exploratory Data Analysis (EDA)
-•	Statistical summary and distributions of Age, Rating, and Recommendations.
-•	Visualizations: Rating histogram, Age histogram, Department barplots, Recommended pie chart.
-Figure 5: Correlation heatmap of numerical variables.
-Figure 6: Boxplot showing feature distributions.
-5.	Statistical Analysis and Hypothesis Testing
-•	ANOVA test on Rating across top 3 Departments.
-•	Key finding: Significant differences observed (p-value = ...).
-Figure 7: Linear regression fit and confidence interval.
-6.	Machine Learning Models
-6.1 Supervised Learning
-•	Logistic Regression (TF-IDF text features), Random Forest (numeric features).
-•	Metrics: Accuracy, Precision, Recall, F1-score.
-Figure 8: Confusion matrix of classification results.
-6.2 Unsupervised Learning
-•	KMeans clustering on numeric features.
-•	PCA for dimensionality reduction.
-Figure 9: PCA 2D visualization of clusters.
-7.	Time Series Analysis
-•	Synthetic monthly review counts generated.
-•	Seasonal decomposition and ARIMA model applied.
-•	Forecast evaluation: MAE, RMSE.
-Figure 10: Time series forecasting plot (Predicted vs Actual).
-8.	Neural Network and Deep Learning
-•	Simple dense NN with input, hidden, and output layers for numeric features.
-•	Trained for 10 epochs.
-•	Compared with traditional ML models.
-Figure 11: Neural network architecture diagram.
-Figure 12: Loss and accuracy curves during training.
-9.	Natural Language Processing (NLP)
-•	Text cleaning, tokenization.
-•	TF-IDF vectorization.
-•	Word cloud visualization.
-•	Sentiment distribution analysis.
-Figure 13: Word cloud of most frequent terms.
-Figure 14: Sentiment distribution chart.
-10.	Ethics and Data Security
-•	Bias detection: Age, Department categories.
-•	Fairness analysis: Recommendations.
-•	Privacy: Users' personal reviews.
-Table 1: Potential ethical risks and mitigation strategies.
-11.	Results and Discussion
-•	Model performance summary.
-•	TF-IDF+LogReg, RandomForest, Neural Network accuracies.
-•	Insights: TF-IDF performs well on text, RandomForest and NN comparable on numeric data.
-Figure 15: Model performance comparison (bar chart).
-12.	Conclusion and Future Work
-•	Learned: Data patterns, sentiment, and predictive modeling.
-•	Improvements: Larger dataset, full deep learning on text, better hyperparameter tuning.
-13.	References
-•	Dataset: Kaggle "Women's Clothing E-Commerce Reviews"
-•	Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, nltk, tensorflow, wordcloud
-•	Documentation: scikit-learn, TensorFlow, statsmodels
+
+Data types:
+
+Numerical: Rating, Age, Positive Feedback Count
+
+Categorical: Department Name, Division Name, Class Name
+
+Text: Review Text
+
+Project Structure
+
+The project follows a full data lifecycle: data collection → preprocessing → analysis → modeling → evaluation.
+
+Key Steps:
+
+Data Preprocessing
+
+Fill missing values (Review Text, Recommended IND)
+
+Remove duplicates
+
+Normalize numeric features
+
+Encode categorical features
+
+Split data into training/testing sets
+
+Exploratory Data Analysis (EDA)
+
+Distribution analysis: Rating, Age, Recommendation
+
+Visualizations: histograms, pie charts, barplots, boxplots
+
+Correlation analysis of numeric features
+
+Statistical Analysis
+
+ANOVA tests across top departments
+
+Insights on rating differences by categories
+
+Machine Learning Models
+
+Supervised Learning: TF-IDF Logistic Regression (text), Random Forest (numeric)
+
+Metrics: Accuracy, Precision, Recall, F1-score
+
+Unsupervised Learning: KMeans clustering and PCA on numeric features
+
+Time Series Analysis
+
+Synthetic monthly review counts
+
+Seasonal decomposition and ARIMA forecasting
+
+Neural Network
+
+Simple dense network trained on numeric features
+
+Comparison with Random Forest and Logistic Regression models
+
+Natural Language Processing (NLP)
+
+Text cleaning and tokenization
+
+TF-IDF vectorization
+
+Word cloud visualization
+
+Sentiment analysis
+
+Ethics and Data Security
+
+Bias detection (age, department)
+
+Fairness assessment for recommendations
+
+User privacy considerations
+
+Outputs and Figures
+
+The project generates multiple visualizations and tables for analysis:
+
+Figures: Ratings distribution, Age distribution, Correlation heatmaps, Boxplots, Confusion matrices, PCA plots, Word clouds, Neural Network diagrams, Model performance comparison
+
+Tables: Ethical risk analysis, Model results
+
+Results and Insights
+
+TF-IDF Logistic Regression performs well on textual review classification.
+
+Random Forest and Neural Network models provide comparable results on numeric features.
+
+EDA revealed trends in customer recommendations by department and rating distributions.
+
+Sentiment analysis highlights positive and negative feedback patterns.
+
+Conclusion and Future Work
+
+Learned valuable insights from customer reviews and ratings.
+
+Predictive models show potential for recommendation systems.
+
+Future improvements:
+
+Apply deep learning for full-text sentiment analysis
+
+Hyperparameter tuning for better ML and NN performance
+
+Expand dataset for more robust modeling
+
+References and Libraries
+
+Dataset: Kaggle "Women's Clothing E-Commerce Reviews"
+
+Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, nltk, tensorflow, wordcloud, statsmodels
+
+Documentation: scikit-learn, TensorFlow, statsmodels
